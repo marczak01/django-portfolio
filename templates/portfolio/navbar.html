@@ -1,0 +1,17 @@
+{% load static %}
+
+<header>
+
+  <h1>MAREK MARCZAK</h1>
+  <h3 class="nav-title">SELF LEARNER WEB DEVELOPER</h3>
+
+  <nav>
+      <div class="navbar">
+          <a href="{% url 'home' %}">HOME</a>
+          <a href="{% static 'resume.pdf' %}">RESUME</a>
+          <a href="{% url 'projects' %}">PROJECTS</a>
+          <a href="{% url 'blogs' %}">BLOG</a>
+      </div>
+  </nav>
+
+</header>

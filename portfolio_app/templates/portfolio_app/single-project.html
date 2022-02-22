@@ -1,0 +1,32 @@
+{% extends 'portfolio/main.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- single-project starts -->
+
+<section class="single-project">
+
+    <h2>{{ project.title }}</h2>
+    <div class="tags-box">
+        <a href="#"><span>Django</span></a>
+        <a href="#"><span>Python</span></a>
+        <a href="#"><span>HTML/CSS</span></a>
+    </div>
+
+    <div class="single-project-box">
+        <p>{{ project.short_intro }}</p>
+        <div class="gallery">
+            <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+            <img src="{{ project.project_image.url }}" alt="projectimg">
+            <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+        </div>
+    </div>
+</section>
+
+
+<!-- single-project ends -->
+
+
+{% endblock content %}

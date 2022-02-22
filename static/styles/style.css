@@ -1,0 +1,253 @@
+body{
+  background-color: black;
+  color: whitesmoke;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: -20px;
+}
+
+.nav-title{
+  text-align: center;
+}
+
+.navbar{
+  background-color: rgba(173, 180, 173, 0.1);
+  text-align: center;
+  line-height: 1.5em;
+  padding: 8px;
+}
+
+.navbar a{
+  margin: auto 5%;
+  text-decoration: none;
+  color:whitesmoke;
+  transition: all 500ms;
+}
+
+.navbar a:hover{
+  color:silver;
+  letter-spacing: 2px;
+  transition: all 200ms ease-in 50ms;
+}
+
+.stack-box{
+  background-image: url('/Stylowanie/zdjecia/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  border: 1px solid silver;
+  margin: 20px auto;
+  padding: 3%;
+  border-radius: 25px;
+  width: 75%;
+}
+
+.stack-box p{
+  margin: 15px auto;
+}
+
+.tags{
+  margin: auto;
+  line-height: 1.5em;
+}
+
+.stack-box a{
+  text-decoration: none;
+  color: whitesmoke;
+  margin: auto 2%;
+  transition: all 500ms;
+}
+
+.stack-box a:hover{
+  color: silver;
+  letter-spacing: 2px;
+  transition: all 200ms ease-in 50ms;
+}
+
+.section-title{
+  text-align: center;
+  margin: 30px;
+}
+
+/* projects home */
+
+.projects-box{
+  display: flex;
+}
+
+.project-box{
+  width: 30%;
+  margin: 0 auto;
+}
+
+.project-img{
+  height: 80%;
+}
+
+.project-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.project-box img:hover{
+  /* effects for images */
+}
+
+.project-title{
+  margin: 10px;
+  text-align: center;
+}
+
+/* all projects */
+
+.all-projects .projects-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* blogs home */
+
+.blog-title{
+  margin: 10px;
+  text-align: center;
+}
+
+.posts-box{
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(173, 180, 173, 0.1);
+}
+
+.post-box{
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px 15px;
+}
+
+.post-box a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.post-box span{
+  margin: auto 10px auto 80%;
+}
+
+/* blogs all */
+
+.blogs-page a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.blogs-page h3{
+  text-align: center;
+}
+
+
+/* single project */
+
+.single-project h2{
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+.tags-box{
+  text-align: center;
+}
+
+.tags-box span{
+  border: 2px solid whitesmoke;
+  border-radius: 25px;
+  padding: 2px 10px;
+  font-weight: 700;
+  background-color: darkgrey;
+  text-shadow: 1px 1px black;
+}
+
+.tags-box a{
+  margin: auto 20px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/*  project-box */
+
+.single-project-box{
+  width: 80%;
+  margin: 15px auto;
+  /* border: 2px solid red; */
+}
+
+.single-project-box img{
+  width: 70%;
+  margin: 10px auto;
+  display: block;
+  border: 2px solid darkgray;
+  border-radius: 8px;
+
+}
+
+.single-project-box p{
+  background-color: rgba(169, 169, 169, 0.286);
+  text-align:center;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 30px auto;
+
+}
+
+.gallery{
+  display: flex;
+  align-items: center;
+}
+
+.gallery a{
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 500ms;
+}
+
+.gallery a:hover{
+  color: grey;
+  transition: color 600ms ease-out;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer hr{
+  color: whitesmoke;
+}
+
+.footer-box{
+  background-color:black;
+  text-align: center;
+  padding: 5px;
+  color: whitesmoke;
+}
+
+.footer-box a{
+  text-decoration: none;
+  color:whitesmoke;
+  margin: auto 2%;
+}

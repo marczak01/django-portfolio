@@ -1,0 +1,22 @@
+{% extends 'portfolio/main.html' %}
+{% block content %}
+{% load static %}
+
+
+<section class="blogs-page">
+  <h2 class="section-title">ALL POSTS</h2>
+  <h3>Number of posts: {{ num }} </h3>
+  <div class="posts-box">
+    {% for blog in blogs %}
+      <div class="post-box">
+        <a href="{% url 'single-post' blog.id %}">
+          <h3 class="blog-title">{{ blog.title }}</h3>
+          <p>{{ blog.content|slice:150 }}...</p>
+          <span>{{ blog.created|date:'d-m-Y' }}</span>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

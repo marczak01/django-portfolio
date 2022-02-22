@@ -1,0 +1,52 @@
+{% extends 'portfolio/main.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="stack-box">
+  <p>WANT TO KNOW WHAT I CAN?<br>CHECK MY PROJECTS, BLOG OR CLICK TAGS BELOW:</p>
+  <div class="tags">
+      <a href="#">DATABASES</a>
+      <a href="#">DJANGO</a>
+      <a href="#">JAVASCRIPT</a>
+      <a href="#">PYTHON</a>
+      <a href="#">HTML/CSS</a>
+  </div>
+</div>
+
+<hr>
+
+<section>
+  <h2 class="section-title">LATEST PROJECTS</h2>
+  <div class="projects-box">
+    {% for project in projects %}
+      <div class="project-box">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <a href="{% url 'single-project' project.id %}">
+              <div class="project-img">
+                  <img src="{{ project.project_image.url }}" alt="project">
+              </div>
+          </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<br>
+<hr>
+
+<section>
+  <h2 class="section-title">LATEST POSTS</h2>
+  <div class="posts-box">
+    {% for blog in blogs %}
+      <div class="post-box">
+        <a href="{% url 'single-post' blog.id %}">
+          <h3 class="blog-title">{{ blog.title }}</h3>
+          <p>{{ blog.content|slice:150 }}...</p>
+          <span>{{ blog.created|date:'d-m-Y' }}</span>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock content %}

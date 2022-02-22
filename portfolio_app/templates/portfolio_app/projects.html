@@ -1,0 +1,24 @@
+{% extends 'portfolio/main.html' %}
+{% load static %}
+{% block content %}
+
+<hr>
+
+<section class="all-projects">
+  <h2 class="section-title">MY PROJECTS</h2>
+  <div class="projects-box">
+    {% for project in projects %}
+      <div class="project-box">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <a href="{% url 'single-project' project.id %}">
+              <div class="project-img">
+                  <img src="{{ project.project_image.url }}" alt="project">
+              </div>
+          </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<hr>
+{% endblock content %}
